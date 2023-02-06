@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #22b37b 0%, #1f2b17 100%);
+  font-size: 62%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+  overflow: hidden;
+}
+header {
+  padding: 7px;
+}
+header h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+form {
+  padding: 17px;
+}
+
+.form-control {
+  margin-bottom: 7px;
+  padding-bottom: 17px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control label {
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  display: inline-block;
+  border: 1.8px solid #bebebe;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  padding: 7px;
+}
+
+.form-control select {
+    display: inline-block;
+    border: 1.8px solid #bebebe;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 7px;
+  }
+
+.form-control textarea {
+  display: inline-block;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  padding: 7px;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.7rem;
+  visibility: hidden;
+}
+
+#btnEnviar {
+  background-color: rgb(39, 125, 223);
+  border: 2px solid #f0f0f0;
+  color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1rem;
+  transition: ease-in-out 0.3s;
+}
+
+#btnEnviar:hover {
+  transform: scale(1.03);
+  transition: ease-in-out 0.3s;
+}
+
+/* Error and Success */
+
+.form-control.success input {
+  border-color: #4caf50;
+}
+
+.form-control.error input {
+  border-color: #c52222;
+}
+
+.form-control.success small {
+  border-color: #c52222;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #c52222;
+}
+
+
+@media (max-width: 400px) {
+
+  .form-control label {
+    font-size: 0.7rem;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input {
+    display: inline-block;
+    border: 1.5px solid #bebebe;
+    border-radius: 5px;
+    font-size: .9rem;
+    width: 100%;
+    padding: 7px;
+  }
+  
+  .form-control select {
+      display: inline-block;
+      border: 1.8px solid #bebebe;
+      border-radius: 5px;
+      font-size: .9rem;
+      width: 100%;
+      padding: 7px;
+      margin-bottom: 7px;
+    }
+  
+  .form-control textarea {
+    display: inline-block;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 7px;
+  }
+  
+  .form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.7rem;
+    visibility: hidden;
+  }
+
+}

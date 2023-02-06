@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="form">
+        <header>
+          <h2>Orçamento</h2>
+        </header>
+
+        <!-- USERNAME -->
+        <div class="form-control">
+          <label for="">Digite Seu nome</label>
+          <input type="text" id="username" placeholder="Digite seu nome"/>
+          <small></small>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-control">
+          <label for="">Digite Seu E-mail</label>
+          <input type="email" id="txtemail" placeholder="Digite E-mail"  />
+          <small></small>
+        </div>
+
+        <!-- PHONE -->
+        <div class="form-control">
+          <label for="">Numero de Telefone</label>
+          <input type="text" id="phone" placeholder="Numero de telefone" maxlength="15" />
+          <small></small>
+        </div>
+
+        <!-- SERVIÇOS -->
+        <div class="form-control-servicos">
+          <select name="servicos" id="servicos" value="Serviços" >
+            <option value="Serviços de Jardinagem">Serviços de Jardinagem</option>
+            <option value="Serviços de Paisagismo">Serviços de Paisagismo</option>
+            <option value="Serviços de Roçagem">Serviços de Roçagem</option>
+            <option value="Projetos">Projetos</option>
+            <option value="Outros Serviços">Outros Serviços</option>
+          </select>
+          <small></small>
+        </div>
+
+        <!-- TXTAREA -->
+        <div class="form-control">
+          <textarea name="txtarea" id="txtarea" cols="30" rows="5" ></textarea>
+          <small></small>
+        </div>
+
+        <!-- BTNENVIAR -->
+        <button type="submit" id="btnEnviar">Enviar</button>
+
+
+      </form>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
