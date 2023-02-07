@@ -58,7 +58,7 @@ form {
   padding: 7px;
 }
 
-.form-control select {
+.form-control-servicos select {
     display: inline-block;
     border: 1.8px solid #bebebe;
     border-radius: 5px;

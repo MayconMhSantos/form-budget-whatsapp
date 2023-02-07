@@ -79,7 +79,7 @@ function validedForm(){
         document.getElementById("username").value = ""
         document.getElementById("txtemail").value = ""
         document.getElementById("phone").value  = ""
-        document.getElementById("servicos").value = ""
+
         document.getElementById("txtarea").value = ""
         
     }
