@@ -68,18 +68,23 @@ function validedForm(){
     if (formIsValid) {
 
         //   console.log("O formulário está 100% válido!");
-
+        const phoneForYou = phone.value
         const nameWhats = username.value.replace(/( )+/g, "+")
         const phoneWhats = phone.value.replace(/( )+/g, "+")
+
         const textAreaWhats = txtarea.value.replace(/( )+/g, "+")
-        let url = "https://wa.me/5545998359106?text="+'Nome+:+'+nameWhats+'+/+'+'+Email:+'+emailValue+'+/+'+'+Telefone:+'+phoneWhats+'+/+'+'+Necessidade+do+cliente:+'+textAreaWhats;
+
+        // Envia a msg para o próprio solicitante do Form
+        const phoneClearForYou= validedPhoneForYou(phoneForYou)
+
+        let url = "https://wa.me/55"+phoneClearForYou+"?text="+'Nome+:+'+nameWhats+'+/+'+'+Email:+'+emailValue+'+/+'+'+Telefone:+'+phoneWhats+'+/+'+'+Necessidade+do+cliente:+'+textAreaWhats;
         console.log(url);
         console.log("Tudo certo")
         openInNewTab(url)
         document.getElementById("username").value = ""
         document.getElementById("txtemail").value = ""
         document.getElementById("phone").value  = ""
-
+        document.getElementById("servicos").value = ""
         document.getElementById("txtarea").value = ""
         
     }
@@ -112,6 +117,12 @@ function validedPhone(v){
     v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
     v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
     v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    return v
+}
+
+function validedPhoneForYou(v){
+    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+    console.log(v)
     return v
 }
 

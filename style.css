@@ -14,26 +14,36 @@ body {
   justify-content: center;
 }
 
-.section-form {
+.container {
+  width: 400px;
+  max-width: 90%;
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-  width: 400px;
-  max-width: 90%;
   overflow: hidden;
-}
-.header-form {
-  padding: 7px;
-}
-.header-form h2 {
-  font-size: 1.7rem;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 form {
+  width: 100%;
   padding: 17px;
 }
+header {
+  width: 100%;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h2{
+  font-size: 2rem;
+}
+
+header img{
+  width: 55px;
+  height: 55px;
+}
+
+
 
 .form-control {
   margin-bottom: 7px;
@@ -58,7 +68,7 @@ form {
   padding: 7px;
 }
 
-.form-control-servicos select {
+.form-control select {
     display: inline-block;
     border: 1.8px solid #bebebe;
     border-radius: 5px;
